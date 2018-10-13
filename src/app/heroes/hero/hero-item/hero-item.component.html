@@ -1,0 +1,13 @@
+<a style="cursor: pointer"
+   class="portfolio-item d-block mx-auto"
+   [routerLink]="['/heroes', hero.id]"
+>
+  <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+    <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+      <i class="fas fa-search-plus fa-3x"></i>
+      <p class="h4">{{hero.heroName}}</p>
+      <blockquote class="h5 font-italic">"{{hero.tagline}}"</blockquote>
+    </div>
+  </div>
+  <img class="img-fluid" [src]="hero.cover" alt="">
+</a>

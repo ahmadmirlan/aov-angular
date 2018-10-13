@@ -1,0 +1,32 @@
+<section class="mt-5 bg-dark">
+  <div class="container">
+    <h2 class="text-center text-uppercase text-primary mb-0 text-uppercase">{{hero.heroName}}</h2>
+    <hr class="star-light mb-5">
+    <div class="row border border-secondary">
+      <div class="col-md-6 col-lg-5 m-2">
+        <img class="img-thumbnail" [src]="hero.cover" alt="">
+      </div>
+      <div class="col-md-6 col-lg-5 m-2">
+        <img class="rounded" [src]="hero.skill" alt="">
+      </div>
+      <div class="col-md-12 col-lg-12 m-2">
+        <table class="table table-striped table-dark">
+          <tbody>
+          <tr>
+            <th scope="row">Name</th>
+            <td>{{hero.heroName}}</td>
+          </tr>
+          <tr>
+            <th scope="row">Role</th>
+            <td>Jacob</td>
+          </tr>
+          <tr>
+            <th scope="row">Tagline</th>
+            <td>{{hero.tagline}}</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
